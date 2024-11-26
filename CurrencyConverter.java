@@ -61,3 +61,4 @@ public class CurrencyConverter {
         System.out.println("\nThank you for using the Currency Converter!");
     }
 }
+
