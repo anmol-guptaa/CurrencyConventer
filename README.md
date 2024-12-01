@@ -27,7 +27,7 @@ Enter the target currency code (e.g., USD, INR, EUR, GBP, AUD): INR
 <br>
 Enter the amount to convert: <b>100</b>
 <br/>
-Converted Amount:<b> 8300.00 INR</b>
+Converted Amount:<b> 8300.00 ₹ ($ to ₹)</b>
 
 
 ## How It Works
