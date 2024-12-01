@@ -4,36 +4,52 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class CurrencyConverter {
-        public static void main(String[] args) {
+     public static void main(String[] args) {
             // Display a welcome message
-            System.out.println("   Welcome to the Real-Time Currency Converter!");
-            System.out.println("Convert currencies effortlessly using this program.\n");
+         System.out.println("   Welcome to the Enhanced Currency Converter!");
+         System.out.println("Convert currencies effortlessly using this program.\n");
 
             // Step 1: Define conversion rates using a HashMap
             HashMap<String, Double> rates = new HashMap<>();
-            rates.put("USD_INR", 83.0); // 1 USD = 83 INR
-            rates.put("INR_USD", 0.012); // 1 INR = 0.012 USD
-            rates.put("USD_EUR", 0.94); // 1 USD = 0.94 EUR
-            rates.put("EUR_USD", 1.06); // 1 EUR = 1.06 USD
-            rates.put("INR_EUR", 0.011); // 1 INR = 0.011 EUR
-            rates.put("EUR_INR", 89.0); // 1 EUR = 89 INR
+            rates.put("USD_INR", 83.0);
+            rates.put("INR_USD", 0.012);
+            rates.put("USD_EUR", 0.94);
+            rates.put("EUR_USD", 1.06);
+            rates.put("USD_GBP", 0.78);
+            rates.put("GBP_USD", 1.28);
+            rates.put("USD_JPY", 146.0);
+            rates.put("JPY_USD", 0.0068);
+            rates.put("INR_EUR", 0.011);
+            rates.put("EUR_INR", 89.0);
+            rates.put("INR_GBP", 0.0095);
+            rates.put("GBP_INR", 105.0);
+            rates.put("INR_JPY", 1.75);
+            rates.put("JPY_INR", 0.57);
+            rates.put("EUR_GBP", 0.83);
+            rates.put("GBP_EUR", 1.21);
+            rates.put("EUR_JPY", 155.0);
+            rates.put("JPY_EUR", 0.0065);
+            rates.put("GBP_JPY", 186.0);
+            rates.put("JPY_GBP", 0.0054);
 
             // Step 2: Define currency symbols
             HashMap<String, String> symbols = new HashMap<>();
             symbols.put("USD", "$");
             symbols.put("INR", "₹");
             symbols.put("EUR", "€");
+            symbols.put("GBP", "£");
+            symbols.put("JPY", "¥");
 
             Scanner sc = new Scanner(System.in);
             char choice;
 
             do {
                 // Input: Source currency
-                System.out.println("Enter the source currency code (e.g., USD, INR, EUR): ");
+                System.out.println("Enter the source currency code (USD, INR, EUR, GBP, JPY): ");
                 String sourceCurrency = sc.next().toUpperCase();
 
                 // Input: Target currency
-                System.out.println("Enter the target currency code (e.g., USD, INR, EUR): ");
+                System.out.println("Enter the target currency code (USD, INR, EUR, GBP, JPY): ");
                 String targetCurrency = sc.next().toUpperCase();
 
                 // Input: Amount to convert
@@ -66,9 +82,9 @@ public class CurrencyConverter {
             } while (choice == 'Y');
 
             // Goodbye message
-            System.out.println("\nThank you for using the Currency Converter. Have a great day!");
+            System.out.println("\nThank you for using the Enhanced Currency Converter. Have a great day!");
             sc.close();
-        }
+     }
 }
 
 
